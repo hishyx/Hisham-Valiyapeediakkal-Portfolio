@@ -1,22 +1,55 @@
 import { motion } from 'motion/react'
 import { SectionHeading } from '../components/SectionHeading'
+import { TechIcon } from '../components/TechIcon'
 import { useRevealProps } from '../hooks/useRevealProps'
 
 const groups = [
-  ['Languages', ['JavaScript', 'TypeScript']],
-  ['Backend', ['Node.js', 'Express.js', 'REST API design']],
-  ['Frontend', ['React']],
-  ['Databases', ['MongoDB', 'Mongoose', 'PostgreSQL', 'Prisma']],
-  ['Authentication', ['JWT authentication', 'Session authentication', 'Role-based authorization']],
-  ['Architecture', ['SOLID principles', 'Repository pattern', 'Dependency injection', 'System design']],
-  ['Infrastructure', ['AWS EC2', 'Nginx']],
-  ['Foundations', ['Data structures & algorithms']],
+  {
+    label: 'Languages',
+    items: ['JavaScript', 'TypeScript', 'SQL'],
+  },
+  {
+    label: 'Backend',
+    items: ['Node.js', 'Express.js'],
+  },
+  {
+    label: 'Frontend',
+    items: ['React', 'HTML', 'CSS', 'Tailwind CSS'],
+  },
+  {
+    label: 'Databases',
+    items: ['MongoDB', 'Mongoose', 'PostgreSQL', 'Prisma'],
+  },
+  {
+    label: 'Infrastructure & Processing',
+    items: ['Redis', 'BullMQ', 'AWS EC2', 'Nginx'],
+  },
+  {
+    label: 'Engineering',
+    items: ['REST API Design', 'Software Architecture', 'System Design', 'Asynchronous Processing'],
+  },
 ]
 
 export function Engineering() {
-  const reveal = useRevealProps(0.08)
-  return <section className="section skills-section" id="skills">
-    <SectionHeading index="02" eyebrow="Engineering skills" title="A practical toolkit, still growing." intro="Technologies and engineering concepts I’ve worked with through projects and independent study." />
-    <motion.div className="skills-list" {...reveal}>{groups.map(([label, items]) => <div className="skills-row" key={label as string}><h3>{label}</h3><ul>{(items as string[]).map((item) => <li key={item}>{item}</li>)}</ul></div>)}</motion.div>
-  </section>
+  const reveal = useRevealProps(0.06)
+  return (
+    <section className="section stack-section" id="stack">
+      <SectionHeading index="01" eyebrow="Tech stack" title="Technologies I work with." />
+      <motion.div className="stack-grid" {...reveal}>
+        {groups.map((group) => (
+          <div className="stack-group" key={group.label}>
+            <h3>{group.label}</h3>
+            <div className="stack-pills">
+              {group.items.map((item) => (
+                <span className="stack-pill" key={item}>
+                  <TechIcon name={item} size={13} />
+                  <span>{item}</span>
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </motion.div>
+    </section>
+  )
 }

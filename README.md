@@ -18,7 +18,7 @@ npm run preview
 
 ## Replace images
 
-- Portrait: replace `public/images/hisham.jpg`, `public/images/hisham.webp`, and `public/images/hisham-480.webp` with optimized versions of the updated photograph. Keep those filenames; the hero selects WebP sizes responsively and falls back to JPEG.
+- Portrait: replace `public/images/portrait-cutout.png` and its WebP variants (`portrait-cutout.webp`, `portrait-cutout-500.webp`, and `portrait-cutout-800.webp`) when updating the portrait.
 - LogiaFun: replace `public/images/logiafun.webp` with a current project screenshot.
 - Pillarthree Productions: replace `public/images/pillarthree_desktop.webp` with the desktop screenshot. `public/images/pillarthree_mobile.webp` is used on small screens.
 - Responsive screenshot variants are `public/images/logiafun-960.webp` and `public/images/pillarthree-desktop-960.webp`.

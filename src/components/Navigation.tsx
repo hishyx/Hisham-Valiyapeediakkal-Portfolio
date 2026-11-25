@@ -2,7 +2,10 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  ['Home', '#top'], ['Projects', '#work'], ['Skills', '#skills'], ['About', '#about'], ['Education', '#education'], ['Contact', '#contact'],
+  ['Home', '#top'],
+  ['Stack', '#stack'],
+  ['Projects', '#work'],
+  ['Contact', '#contact'],
 ]
 
 export function Navigation() {
