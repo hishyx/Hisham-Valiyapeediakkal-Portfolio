@@ -16,7 +16,7 @@ export function Navigation() {
     <a className="nav-name" href="#top" onClick={close}>Hisham <span>Valiyapeediakkal</span></a>
     <nav className={open ? 'nav-links is-open' : 'nav-links'} aria-label="Main navigation">
       {links.map(([label, href]) => <a key={href} href={href} onClick={close}>{label}</a>)}
-      <a className="nav-resume" href="/Hisham_Valiyapeediakkal_Resume.pdf" target="_blank" rel="noreferrer" onClick={close}>Resume <span aria-hidden="true">↗</span></a>
+      <a className="nav-resume" href="/Hisham_Valiyapeediakkal_Resume.pdf?v=2" target="_blank" rel="noreferrer" onClick={close}>Resume <span aria-hidden="true">↗</span></a>
     </nav>
     <button className="menu-toggle" type="button" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
   </header>

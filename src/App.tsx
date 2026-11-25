@@ -83,7 +83,7 @@ function Hero() {
       <motion.div className="hero-details-right" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .4, delay: .2 }}>
         <div className="hero-actions">
           <a className="button button-primary" href="#work">Explore Projects <ArrowRight size={15} /></a>
-          <a className="button button-quiet" href="/Hisham_Valiyapeediakkal_Resume.pdf" download><Download size={14} /> Resume</a>
+          <a className="button button-quiet" href="/Hisham_Valiyapeediakkal_Resume.pdf?v=2" download="Hisham_Valiyapeediakkal_Resume.pdf"><Download size={14} /> Resume</a>
           <a className="button button-quiet" href="#contact">Contact <ArrowUpRight size={14} /></a>
           <a className="hero-github" href="https://github.com/hishyx" target="_blank" rel="noreferrer" aria-label="GitHub profile"><Github size={17} /></a>
         </div>
