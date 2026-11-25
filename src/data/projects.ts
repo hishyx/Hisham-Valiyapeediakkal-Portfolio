@@ -18,7 +18,7 @@ export const projects: Project[] = [
   {
     number: '01', title: 'LogiaFun', category: 'Full-Stack Development', status: 'Deployed',
     description: 'A full-stack e-commerce application featuring customer shopping workflows and an administrative workspace for managing products, inventory and orders.',
-    stack: ['JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'EJS'],
+    stack: ['JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'EJS', 'Passport.js', 'Cloudinary', 'Razorpay', 'Nodemailer', 'Puppeteer', 'ExcelJS'],
     highlights: ['Customer and Google authentication', 'Product and inventory management', 'Order processing and tracking', 'Mock Razorpay checkout, invoices & Excel reports'],
     story: '',
     repo: 'https://github.com/hishyx/logiafun-ecommerce', live: 'https://logiafun-ecommerce.onrender.com',

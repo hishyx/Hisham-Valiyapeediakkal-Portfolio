@@ -60,13 +60,13 @@ function FeaturedProject({ project, index }: { project: CleanProject; index: num
   const media = project.visual === 'commerce'
     ? <img src="/images/logiafun.webp" srcSet="/images/logiafun-960.webp 960w, /images/logiafun.webp 1920w" sizes="(max-width: 860px) calc(100vw - 40px), 540px" width="1920" height="1080" alt="LogiaFun e-commerce application screenshot" loading="lazy" decoding="async" />
     : project.visual === 'production'
-      ? <picture><source media="(max-width: 700px)" srcSet="/images/pillarthree_mobile.webp" type="image/webp" /><img src="/images/pillarthree_desktop.webp" srcSet="/images/pillarthree-desktop-960.webp 960w, /images/pillarthree_desktop.webp 1920w" sizes="(max-width: 860px) calc(100vw - 40px), 540px" width="1920" height="933" alt="Pillarthree Productions website screenshot" loading="lazy" decoding="async" /></picture>
+      ? <picture><source media="(max-width: 700px)" srcSet="/images/pillarthree_mobile.webp" type="image/webp" /><img src="/images/pillarthree_desktop.webp" srcSet="/images/pillarthree-desktop-960.webp 960w, /images/pillarthree_desktop.webp 1920w" sizes="(max-width: 860px) calc(100vw - 40px), 540px" width="1920" height="1252" alt="Pillarthree Productions website screenshot" loading="lazy" decoding="async" /></picture>
       : project.visual === 'inventory'
         ? <InventoryVisual />
         : <AssignauraVisual />
 
   return (
-    <motion.article className={`project-card ${isAssignaura ? 'project-card-building' : ''}`} {...reveal}>
+    <motion.article className={`project-card project-card-${project.visual} ${isAssignaura ? 'project-card-building' : ''}`} {...reveal}>
       <div className="project-card-visual">{media}</div>
       <div className="project-card-body">
         <div className="project-card-meta">

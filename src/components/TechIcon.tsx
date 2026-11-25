@@ -222,6 +222,60 @@ export function TechIcon({ name, size = 14 }: Props) {
     )
   }
 
+  if (key.includes('passport')) {
+    return (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="11" r="6.5" stroke="#34e27a" strokeWidth="1.8" />
+        <path d="M12 7.5a3.5 3.5 0 0 1 0 7" stroke="#34e27a" strokeWidth="1.8" strokeLinecap="round" />
+        <path d="M9 19.5h6" stroke="#34e27a" strokeWidth="1.8" strokeLinecap="round" />
+      </svg>
+    )
+  }
+
+  if (key.includes('cloudinary')) {
+    return (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M7.2 17h10a3.8 3.8 0 0 0 .5-7.6A5.2 5.2 0 0 0 7.6 8.2 4.2 4.2 0 0 0 7.2 17z" stroke="#60a5fa" strokeWidth="1.7" fill="rgba(59,130,246,.14)" strokeLinejoin="round" />
+        <path d="M12 10.5v4.5m-2-2.5 2-2 2 2" stroke="#93c5fd" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    )
+  }
+
+  if (key.includes('razorpay')) {
+    return (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M14.5 4 7.5 16h4.2L9.8 20l6.7-9.2h-4L14.5 4z" fill="#3b82f6" />
+      </svg>
+    )
+  }
+
+  if (key.includes('nodemailer')) {
+    return (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="3.5" y="6" width="17" height="12" rx="2" />
+        <path d="m4.5 7 7.5 5.5L19.5 7" />
+      </svg>
+    )
+  }
+
+  if (key.includes('puppeteer')) {
+    return (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#34d399" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="4" y="4.5" width="16" height="14" rx="2" />
+        <path d="M4 9h16M9.5 14l2-2-2-2M13 15h3" />
+      </svg>
+    )
+  }
+
+  if (key.includes('excel')) {
+    return (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="4" y="4" width="16" height="16" rx="2" stroke="#22c55e" strokeWidth="1.7" fill="rgba(34,197,94,.12)" />
+        <path d="m9 9.5 6 5m0-5-6 5" stroke="#4ade80" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    )
+  }
+
   // Architecture / generic technical icon
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
